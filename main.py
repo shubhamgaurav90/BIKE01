@@ -42,7 +42,7 @@ def predict():
         labels=[[brand_name,owner,age,power,kms_driven]]
         pred=model.predict(labels)
         # print(type(pred))
-        # pred=np.ravel(pred)
+        # pred=np.ravel(pred) UPLOAD 
         print("output:- ",pred)
     return render_template("project.html",prediction=pred)
 
